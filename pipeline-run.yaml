@@ -1,4 +1,4 @@
-apiVersion: tekton.dev/v1alpha1
+apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   name: application-pipeline-run
@@ -9,7 +9,7 @@ spec:
     - name: git
       resourceRef:
         name: git
-    - name: output-image
-      resourceRef:
-        name: image
-  serviceAccountName: pipelinesa
+    # - name: output-image
+    #   resourceRef:
+    #     name: image
+  # serviceAccountName: pipelinesa
