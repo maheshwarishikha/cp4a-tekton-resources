@@ -1,0 +1,7 @@
+apiVersion: tekton.dev/v1alpha1
+kind: TaskRun
+metadata:
+  name: list-source-code-task-run
+spec:
+  taskRef:
+    name: list-source-code
