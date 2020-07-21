@@ -5,3 +5,8 @@ metadata:
 spec:
   taskRef:
     name: list-source-code
+  resources:
+    inputs:
+      - name: git
+        resourceRef:
+          name: git
